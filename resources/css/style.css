@@ -1,0 +1,384 @@
+/* ------------------------------------------------ */
+/* PAGE SETUP */
+/* ------------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    color: #E3C8ED;
+    background-color: #efe0f4;
+    font-family: "Shadows Into Light Two", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '-';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ------------------------------------------------ */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------------ */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h1, h2 {
+    letter-spacing: 3px;
+    word-spacing: 2px;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 240%;
+}
+
+h2 {
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #c088d6;
+    content: " ";
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 10px;
+}
+
+h3 {
+    letter-spacing: 2px;
+    color: #c088d6;
+    font-size: 135%;
+    text-align: center;
+    margin: 10px;
+}
+
+/* PARAGRAPHS */
+
+.long-copy {
+    line-height: 145%;
+    width: 66%;
+    margin-left: 17%;
+}
+
+.box {
+    padding: 3%;
+    font-size: 85%;
+    text-align: center;
+    line-height: 135%;
+    letter-spacing: 1.5px;
+}
+
+/* BUTTONS */
+.btn:link, .btn:visited, input[type=submit] {
+    display: inline-block;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    -webkit-transition: background-color 200ms, border 200ms, color 200ms;
+    transition: background-color 200ms, border 200ms, color 200ms;
+}
+
+.btn-full:link, .btn-full:visited {
+    background-color: #cda1df;
+    border: 1px solid #cda1df;
+}
+
+.btn-ghost:link, .btn-ghost:visited, input[type=submit] {
+    background-color: transparent;
+    border: 1px solid #cda1df;
+    color: #cda1df;
+}
+
+.btn:hover, .btn:active {
+    background-color: #c088d6;
+}
+
+.btn-full:hover, .btn-full:active {
+    border: 1px solid #c088d6;
+}
+
+.btn-ghost:hover, .btn-ghost:active, input[type=submit]:hover, input[type=submit]:active {
+    border: 1px solid #c088d6;
+    color: #fff;
+}
+
+/* ------------------------------------------------ */
+/* MEMBERS */
+/* ------------------------------------------------ */
+
+.section-features {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), #333), url(img/whun_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-features p {
+    margin-bottom: 0px;
+}
+
+.member-pic {
+    height: 150px;
+    width: 150px;
+    border-radius: 250px;
+    border: 2px solid #cda1df;
+}
+
+/* ------------------------------------------------ */
+/* HEADER */
+/* ------------------------------------------------ */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), #000), url(img/performance_black.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+.bg-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    border-radius: 200px;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 40px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.main-nav li a:link, .main-nav li a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 200ms;
+    transition: border-bottom 200ms;
+}
+
+.main-nav li a:hover, .main-nav li a:active {
+    border-bottom: 2px solid #c088d6;
+}
+
+.main-nav i, .footer-nav i {
+    font-size: 50%
+}
+
+/* ------------------------------------------------ */
+/* PICS */
+/* ------------------------------------------------ */
+
+.section-pics {
+    padding: 0;
+}
+
+.pics-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.pics-showcase li {
+    float: left;
+    width: 33.333333333333%;
+}
+
+.pic-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.pic-photo img {
+    opacity: 0.85;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: transform 400ms, opacity 400ms;
+    transition: transform 400ms, opacity 400ms;
+}
+
+.pic-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+/* ------------------------------------------------ */
+/* SUPPORT */
+/* ------------------------------------------------ */
+
+.section-support {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), #333), url(img/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-support i {
+    font-size: 500%;
+}
+
+.p-btn {
+    padding-top: 20%;
+    text-align: center;
+}
+
+.album-cover img {
+    width: 100%;
+    height: auto;
+}
+
+.album-cover p {
+    text-align: right;
+}
+
+.btn-bandcamp, .btn-amazon, .btn-apple {
+    padding: 5px 20px;
+    font-size: 80%;
+}
+
+/* ------------------------------------------------ */
+/* LISTEN */
+/* ------------------------------------------------ */
+
+.section-listen i {
+    font-size: 500%;
+}
+
+.section-listen img {
+    border-radius: 50%;
+}
+
+/* ------------------------------------------------ */
+/* CONNECT */
+/* ------------------------------------------------ */
+
+.section-contact {
+    padding: 50px 0;
+}
+
+.section-contact i {
+    font-size: 500%;
+}
+
+.btn-twitter, .btn-instagram, .btn-facebook, .btn-youtube {
+    padding: 5px 20px;
+    font-size: 80%;
+}
+
+/* ------------------------------------------------ */
+/* CONTACT FORM */
+/* ------------------------------------------------ */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 2px;
+    border: 1px solid #E3C8ED;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    font-family: "Shadows Into Light Two", sans-serif;
+}
+
+/* ------------------------------------------------ */
+/* FOOTER */
+/* ------------------------------------------------ */
+
+footer {
+    background-color: #59266d;
+    padding-bottom: 10px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 75%;
+}
+
+footer img {
+    height: 100px;
+    width: auto;
+    border-radius: 200px;
+    float: right;
+    margin-top: 20px;
+}
+
+.footer-nav {
+    float: left;
+    list-style: none;
+}
+
+.footer-nav li {
+    margin-left: 40px;
+    margin-top: 60px;
+    display: inline-block;
+}
+
+.footer-nav li a:link, .footer-nav li a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 200ms;
+    transition: border-bottom 200ms;
+}
+
+.footer-nav li a:hover, .footer-nav li a:active {
+    border-bottom: 2px solid #E3C8ED;
+}
